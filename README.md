@@ -1,7 +1,5 @@
 <div align="center">
 
-![Dasby Logo](https://cdn.discordapp.com/avatars/507073349336432640/b2701e81ba6457b2e2bd9190be5991ae.png)
-
 # Dasby
 
 Dasby es un pequeño bot multiproposito</h4>
