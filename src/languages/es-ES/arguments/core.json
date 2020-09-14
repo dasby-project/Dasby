@@ -1,0 +1,15 @@
+{
+	"integer": {
+		"argumentIntegerInvalidNumber": "El argumento no se resolvió en un número entero.",
+		"argumentIntegerTooSmall": "El argumento es demasiado pequeño.",
+		"argumentIntegerTooBig": "El argumento es demasiado grande."
+	},
+	"string": {
+		"argumentStringTooShort": "El argumento es demasiado corto.",
+		"argumentStringTooLong": "El argumento es demasiado largo."
+    },
+    "boolean": {
+        "notProvided": "Se debe propocionar un valor booleano.",
+        "invalid": "El valor introducido no es un booleano."
+    }
+}
