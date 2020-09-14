@@ -1,0 +1,8 @@
+{
+	"avatar": {
+		"description": "Obtiene el avatar de un usuario",
+		"extended": "Obtiene el avatar de un usuario usando la utilizando `ìd` o una `mención`",
+		"title": "Avatar de {{userTag}}",
+		"footer": "Pedido por {{authorTag}}"
+	}
+}
