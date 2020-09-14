@@ -67,6 +67,7 @@
 		"@sapphire/utilities": "^1.0.0",
 		"@scp/in17n": "sapphirecommunityplugins/in17n#build",
 		"discord.js": "discordjs/discord.js",
+		"i18next": "^19.7.0",
 		"ioredis": "^4.17.3",
 		"module-alias": "^2.2.2",
 		"pg": "^8.3.3",

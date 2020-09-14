@@ -1,3 +1,6 @@
 export const enum PreConditions {
-	OwnerOnly = 'OwnerOnly'
+	GuildOnly = 'GuildOnly',
+	OwnerOnly = 'OwnerOnly',
+	DMOnly = 'DMOnly',
+	NSFW = 'NSFW'
 }

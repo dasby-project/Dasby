@@ -1,6 +1,3 @@
 {
-	"default": "{{key}} aún no se ha traducido en es-ES.",
-	"test": {
-		"array": ["hola xdeh {{test}}", "xde {{test}}"]
-	}
+	"default": "{{key}} aún no se ha traducido en es-ES."
 }
