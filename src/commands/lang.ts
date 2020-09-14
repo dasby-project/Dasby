@@ -1,4 +1,4 @@
-import { Command, CommandOptions, Args } from '@sapphire/framework';
+import { Command, Args } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 
 export class DasbyCommand extends Command {
