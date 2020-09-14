@@ -1,0 +1,11 @@
+dist
+.eslintignore
+.eslintrc.json
+.gitignore
+.nvmrc
+.prettierrc.json
+.releaserc.json
+tsconfig.eslint.json
+tsconfig.base.json
+watch.json
+yarn.lock

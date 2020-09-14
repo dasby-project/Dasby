@@ -1,0 +1,15 @@
+{
+	"extends": "@sapphire",
+	"rules": {
+		"quote-props": 0,
+		"@typescript-eslint/naming-convention": 0
+	},
+	"overrides": [
+		{
+			"files": ["src/commands/**/*.ts"],
+			"rules": {
+				"@typescript-eslint/require-await": 0
+			}
+		}
+	]
+}

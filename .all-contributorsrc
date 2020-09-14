@@ -1,0 +1,39 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Phamzito",
+      "name": "David Gustavo Herrera De La Cruz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/31642521?v=4",
+      "profile": "https://discord.gg/kqz8jm5",
+      "contributions": [
+        "code",
+        "doc",
+        "bug",
+        "review",
+        "userTesting"
+      ]
+    },
+    {
+      "login": "gatomo-oficial",
+      "name": "Gátomo",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/63877602?v=4",
+      "profile": "https://invite.gg/gatomo",
+      "contributions": [
+        "code",
+        "doc",
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Dasby",
+  "projectOwner": "dasby-project",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
