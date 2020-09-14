@@ -4,7 +4,7 @@ export const DEV = 'DEV' in process.env ? process.env.DEV === 'true' : !('PM2_HO
 export const PREFIX = '-';
 export const OWNER_ID = '497061687820812288';
 
-export const PGSQL_DATABASE_NAME = 'husky';
+export const PGSQL_DATABASE_NAME = 'dasby';
 export const PGSQL_DATABASE_PASSWORD = '';
 export const PGSQL_DATABASE_USER = 'postgres';
 export const PGSQL_DATABASE_PORT = 5432;
