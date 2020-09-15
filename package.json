@@ -13,14 +13,13 @@
 		"pm2:stop": "pm2 stop Dasby",
 		"update": "yarn upgrade-interactive --latest",
 		"start": "node dist/index.js",
-		"start:dev": "yarn build && yarn start",
+		"start:dev": "yarn compile && yarn start",
 		"lint": "eslint --ext ts src --fix",
 		"compile": "yarn build && yarn build:languages",
 		"build": "tsc -b src",
 		"build:languages": "copyfiles ./src/languages/**/*.json --up 1 ./dist/",
 		"build:clean": "tsc -b src --clean",
-		"watch": "tsc -b src -w",
-		"dev": "yarn compile && yarn start"
+		"watch": "tsc -b src -w"
 	},
 	"repository": {
 		"type": "git",
