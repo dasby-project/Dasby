@@ -17,7 +17,7 @@
 		"lint": "eslint --ext ts src --fix",
 		"compile": "yarn build && yarn build:languages",
 		"build": "tsc -b src",
-		"build:languages": "copyfiles ./src/languages/**/**/*.json --up 1 ./dist/",
+		"build:languages": "copyfiles ./src/languages/**/*.json --up 1 ./dist/",
 		"build:clean": "tsc -b src --clean",
 		"watch": "tsc -b src -w"
 	},
