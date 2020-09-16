@@ -12,19 +12,15 @@ export class DasbyArgument extends Argument<number> {
 		if (!Number.isSafeInteger(parsed)) {
 			return this.error(
 				argument,
-				'ArgumentIntegerInvalidNumber',
-				await context.message.fetchLanguageKey('arguments/integer:argumentIntegerInvalidNumber')
+				'IntegerArgument',
+				await context.message.fetchLanguageKey('arguments/core:integer.argumentIntegerInvalidNumber')
 			);
 		}
 		if (typeof context.minimum === 'number' && parsed < context.minimum) {
-			return this.error(
-				argument,
-				'ArgumentIntegerTooSmall',
-				await context.message.fetchLanguageKey('arguments/integer:argumentIntegerTooSmall')
-			);
+			return this.error(argument, 'IntegerArgument', await context.message.fetchLanguageKey('arguments/core:integer.argumentIntegerTooSmall'));
 		}
 		if (typeof context.maximum === 'number' && parsed > context.maximum) {
-			return this.error(argument, 'ArgumentIntegerTooBig', await context.message.fetchLanguageKey('arguments/integer:argumentIntegerTooBig'));
+			return this.error(argument, 'IntegerArgument', await context.message.fetchLanguageKey('arguments/core:integer.argumentIntegerTooBig'));
 		}
 
 		return this.ok(parsed);
