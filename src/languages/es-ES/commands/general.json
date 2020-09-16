@@ -1,1 +1,8 @@
-{}
+{
+    "ping": {
+        "description": "Ejecuta una prueba de conexión a Discord.",
+        "extended": "Ejecuta una prueba de respuesta de latencia y API",
+        "message": "Ping? 🏓",
+        "response": "**📨 Mensajes:** {{diff}}\n**❤ API: {{ping}}"
+    }
+}
