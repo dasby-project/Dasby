@@ -33,9 +33,9 @@
 	},
 	"license": "Apache-2.0",
 	"bugs": {
-		"url": "https://github.com/TheHuskyBot/Husky/issues"
+		"url": "https://github.com/dasby-project/Husky/issues"
 	},
-	"homepage": "https://github.com/TheHuskyBot/Husky#readme",
+	"homepage": "https://github.com/dasby-project/Husky#readme",
 	"devDependencies": {
 		"@sapphire/eslint-config": "^1.0.1",
 		"@sapphire/ts-config": "^1.0.0",
