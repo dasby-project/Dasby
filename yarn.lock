@@ -135,10 +135,10 @@
   dependencies:
     "@discordjs/collection" "^0.1.6"
 
-"@sapphire/ts-config@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-1.0.0.tgz#277d6ef2d1bba66f9a5c943784a28874665dde03"
-  integrity sha512-lAfqbGGXEXBAWeIPc7xdiRJ9g0e1eb7XirJ15Xu5yUhNIzBuVH7UcaJllh+ZKNSnJgpQuvo36rXF3brlSrDDfg==
+"@sapphire/ts-config@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-1.0.1.tgz#fbd770b96a18d9e949c786242141ecd5ca0e4aac"
+  integrity sha512-NWRG5utuuxYMIjWJMTr7MVQ69kiqFMOrWE+uPRvrunuXablduhqdDH3LSrptKtvzMQuG9eu1oH9OnZeOTJwO9A==
 
 "@sapphire/utilities@^1.0.0":
   version "1.0.0"
