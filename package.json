@@ -61,7 +61,7 @@
 		"@sapphire/decorators": "^1.0.1",
 		"@sapphire/framework": "sapphire-project/framework#build",
 		"@sapphire/pieces": "sapphire-project/pieces#build",
-		"@sapphire/utilities": "^1.0.0",
+		"@sapphire/utilities": "^1.0.1",
 		"@scp/in17n": "sapphirecommunityplugins/in17n#build",
 		"discord.js": "discordjs/discord.js",
 		"i18next": "^19.7.0",
