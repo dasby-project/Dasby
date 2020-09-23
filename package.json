@@ -58,7 +58,7 @@
 	"dependencies": {
 		"@klasa/stopwatch": "^0.0.1",
 		"@klasa/type": "^0.0.1",
-		"@sapphire/decorators": "^1.0.0",
+		"@sapphire/decorators": "^1.0.1",
 		"@sapphire/framework": "sapphire-project/framework#build",
 		"@sapphire/pieces": "sapphire-project/pieces#build",
 		"@sapphire/utilities": "^1.0.0",
