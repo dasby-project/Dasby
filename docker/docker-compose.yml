@@ -8,6 +8,16 @@ services:
       - '5432:5432'
     volumes:
       - postgres-data:/var/lib/postgresql/data
+  influx:
+    container_name: influxdb
+    image: quay.io/influxdb/influxdb:2.0.0-beta
+    restart: always
+    volumes:
+      - influx-data:/var/lib/influxdb2
+    ports:
+      - '8285:9999'
+    command: influxd run --bolt-path /var/lib/influxdb2/influxd.bolt --engine-path /var/lib/influxdb2/engine --store bolt
+
 volumes:
   postgres-data:
     external: true
