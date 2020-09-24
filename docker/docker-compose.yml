@@ -21,3 +21,5 @@ services:
 volumes:
   postgres-data:
     external: true
+  influx-data:
+    external: true
