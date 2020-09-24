@@ -1,4 +1,4 @@
-import { Argument, ArgumentContext } from '@sapphire/framework';
+import { Argument, ArgumentContext, AsyncArgumentResult } from '@sapphire/framework';
 import type { PieceContext } from '@sapphire/pieces';
 
 const truths = ['1', 'true', '+', 't', 'yes', 'y', 'on'];
@@ -9,7 +9,7 @@ export class DasbyArgument extends Argument<boolean> {
 		super(context, { name: 'boolean' });
 	}
 
-	public async run(argument: string, context: ArgumentContext) {
+	public async run(argument: string, context: ArgumentContext): AsyncArgumentResult<boolean> {
 		if (!argument) {
 			return this.error(argument, 'BooleanArgument', await context.message.fetchLanguageKey('arguments/core:boolean.notProvided'));
 		}

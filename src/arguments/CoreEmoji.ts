@@ -1,16 +1,16 @@
-import { Argument, ArgumentContext } from '@sapphire/framework';
+import { Argument, ArgumentContext, AsyncArgumentResult } from '@sapphire/framework';
 import type { PieceContext } from '@sapphire/pieces';
 import { regex } from '@utils/constants';
-import type { Emoji } from 'discord.js';
+import type { GuildEmoji } from 'discord.js';
 
-export class DasbyArgument extends Argument<Emoji> {
+export class DasbyArgument extends Argument<GuildEmoji> {
 	public emojiRegex = regex.emoji;
 
 	public constructor(context: PieceContext) {
 		super(context, { name: 'emoji' });
 	}
 
-	public async run(argument: string, context: ArgumentContext) {
+	public async run(argument: string, context: ArgumentContext): AsyncArgumentResult<GuildEmoji> {
 		if (!argument) {
 			return this.error(argument, 'EmojiArgument', await context.message.fetchLanguageKey('arguments/core:emoji.notProvided'));
 		}

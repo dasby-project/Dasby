@@ -1,15 +1,69 @@
 {
+	"number": {
+		"invalidNumber": "El argumento no resolvió el número.",
+		"tooSmall": "El argumento es demasiado pequeño.",
+		"tooBig": "El argumento es demasiado grande."
+	},
 	"integer": {
-		"argumentIntegerInvalidNumber": "El argumento no se resolvió en un número entero.",
-		"argumentIntegerTooSmall": "El argumento es demasiado pequeño.",
-		"argumentIntegerTooBig": "El argumento es demasiado grande."
+		"invalidNumber": "El argumento no resolvió el número entero.",
+		"tooSmall": "El argumento es demasiado pequeño.",
+		"tooBig": "El argumento es demasiado grande."
+	},
+	"float": {
+		"invalidFloat": "El argumento no resolvió el número de punto flotante válido.",
+		"tooSmall": "El argumento es demasiado pequeño.",
+		"tooBig": "El argumento es demasiado grande."
+	},
+	"date": {
+		"invalidNumber": "El argumento no resolvió una fecha válida.",
+		"tooSmall": "El argumento es demasiado pequeño.",
+		"tooBig": "El argumento es demasiado grande."
 	},
 	"string": {
-		"argumentStringTooShort": "El argumento es demasiado corto.",
-		"argumentStringTooLong": "El argumento es demasiado largo."
-    },
-    "boolean": {
-        "notProvided": "Se debe propocionar un valor booleano.",
-        "invalid": "El valor introducido no es un booleano."
-    }
+		"tooShort": "El argumento es demasiado corto.",
+		"tooLong": "El argumento es demasiado largo."
+	},
+	"boolean": {
+		"notProvided": "Se debe propocionar un valor booleano.",
+		"invalid": "El valor introducido no es un booleano."
+	},
+	"user": {
+		"unknownUser": "El argumento no resolvió el usuario.",
+		"unknownError": "El argumento encontró un error inesperado al recuperar un usuario."
+	},
+	"member": {
+		"missingGuild": "El argumento debe ejecutarse en un servidor.",
+		"unknownMember": "El argumento no resolvió el miembro.",
+		"unknownError": "El argumento encontró un error inesperado al recuperar un miembro."
+	},
+	"channel": {
+		"missingChannel": "El argumento no resolvió el canal."
+	},
+	"dmChannel": {
+		"missingChannel": "El argumento no resolvió el canal.",
+		"invalidChannel": "El argumento no resolvió el canal de mensajes directos."
+	},
+	"voiceChannel": {
+		"missingChannel": "El argumento no resolvió el canal.",
+		"invalidChannel": "El argumento no resolvió el canal de voz."
+	},
+	"textChannel": {
+		"missingChannel": "El argumento no resolvió el canal.",
+		"invalidChannel": "El argumento no resolvió el canal de texto."
+	},
+	"newsChannel": {
+		"missingChannel": "El argumento no resolvió el canal.",
+		"invalidChannel": "El argumento no resolvió el canal de anuncios."
+	},
+	"role": {
+		"missingGuild": "El argumento debe ejecutarse en un servidor.",
+		"missingRole": "El argumento no resolvió el rol."
+	},
+	"emoji": {
+		"notProvided": "Se debe propocionar un emoji o id como argumento.",
+		"notFound": "El emoji no fue encontrado o no existe."
+	},
+	"hyperlink": {
+		"invalidURL": "El argumento no resolvió una URL válida."
+	}
 }
