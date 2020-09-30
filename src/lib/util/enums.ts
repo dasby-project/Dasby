@@ -4,3 +4,8 @@ export const enum PreConditions {
 	DMOnly = 'DMOnly',
 	NSFW = 'NSFW'
 }
+
+export const enum CacheKey {
+	GuildPrefix = 'guild_prefix',
+	GuildLanguage = 'guild_language'
+}

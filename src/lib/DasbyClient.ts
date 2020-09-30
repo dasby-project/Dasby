@@ -1,24 +1,25 @@
-// configs
-import { PREFIX, ENABLE_INFLUX, INFLUX_OPTIONS, INFLUX_ORG, INFLUX_ORG_ANALYTICS_BUCKET } from '@root/config';
-
+/* eslint-disable @typescript-eslint/no-invalid-this */
 // dependencies
 import { SapphireClient } from '@sapphire/framework';
 import { container } from 'tsyringe';
-import { enumerable } from '@sapphire/decorators';
-import type { ClientOptions } from 'discord.js';
+import type { ClientOptions, Message } from 'discord.js';
 import { join } from 'path';
-import { InfluxDB, QueryApi, WriteApi, WritePrecision } from '@influxdata/influxdb-client';
+import Redis, { Redis as IORedis } from 'ioredis';
+import { CacheManager } from '@utils/Helpers/Cache/CacheManager';
+import { DbSet } from './structures/DbSet';
+
+// configs
+import { PREFIX } from '@root/config';
 
 // Plugins
 import '@scp/in17n/register';
 
+// Enums
+import { CacheKey } from '@utils/enums';
+
 export class DasbyClient extends SapphireClient {
-	@enumerable(false)
-	public influx: InfluxDB | null = ENABLE_INFLUX ? new InfluxDB(INFLUX_OPTIONS) : null;
-
-	public analytics: WriteApi | null = null;
-	public analyticsReader: QueryApi | null = null;
-
+	public readonly redis: IORedis = new Redis();
+	public readonly cache: CacheManager = new CacheManager(this);
 	public constructor(options?: ClientOptions) {
 		super(options);
 		this.arguments.registerPath(join(__dirname, '..', 'arguments'));
@@ -27,13 +28,20 @@ export class DasbyClient extends SapphireClient {
 		this.preconditions.registerPath(join(__dirname, '..', 'preconditions'));
 
 		container.registerInstance(DasbyClient, this);
-
-		if (ENABLE_INFLUX) {
-			this.analytics = this.influx!.getWriteApi(INFLUX_ORG, INFLUX_ORG_ANALYTICS_BUCKET, WritePrecision.s);
-			this.analyticsReader = this.influx!.getQueryApi(INFLUX_ORG);
-		}
 	}
 
-	public fetchPrefix = () => PREFIX;
+	public fetchPrefix = async (message: Message) => {
+		if (message.guild) {
+			const prefix = await this.cache.get(message.id, CacheKey.GuildPrefix);
+			if (prefix !== null) return prefix;
+			const { guilds } = await DbSet.connect();
+			const settings = await guilds.ensure(message.id);
+			await this.cache.set(message.id, settings.prefix, CacheKey.GuildPrefix);
+			await settings.save();
+			return settings.prefix;
+		}
+		return PREFIX;
+	};
+
 	public fetchLanguage = () => 'es-ES';
 }
