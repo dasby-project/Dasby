@@ -65,10 +65,10 @@
   resolved "https://registry.yarnpkg.com/@influxdata/influxdb-client-apis/-/influxdb-client-apis-1.7.0.tgz#88bb5e0168c2e72eab26c492008974833b42ffca"
   integrity sha512-H3E2Ceri37eTZ3ulpnLqUninbPvjJCMMlBD+R9iuJjQfpmUHi0wslv/tPUJ2FA6bqMn9OVTRDYuTt+JB1I/fCQ==
 
-"@influxdata/influxdb-client@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@influxdata/influxdb-client/-/influxdb-client-1.6.0.tgz#46da50714742dd73c99c66f0e7379be9212477b0"
-  integrity sha512-1WHusKmW88P//diAiAXDuO8Fpe5ju7e4QQCKcoPRZstXCGhICYPg8mcIBmurDJMHIUTziCZZjYxR+9jlyXuNaA==
+"@influxdata/influxdb-client@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@influxdata/influxdb-client/-/influxdb-client-1.7.0.tgz#42e5ec002eff8c59182cb52765b7f94dac382a56"
+  integrity sha512-Qa4vV5W2NroETreVA2wvVlfZV12sda5S7Z57Kn5/5J4XDhglrFo5IOWbvEne+ROgPCvZ1ufHdrdbjobm+n0BSg==
 
 "@klasa/cache@^0.0.3":
   version "0.0.3"
