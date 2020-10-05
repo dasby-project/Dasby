@@ -1,0 +1,1 @@
+module.exports = require("./dist/lib/orm/dbConfig").config;

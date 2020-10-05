@@ -1,7 +1,7 @@
 import { PREFIX } from '@root/config';
 import { Entity, Check, BaseEntity, PrimaryColumn, Column } from 'typeorm';
 
-@Entity('guild', { schema: 'public' })
+@Entity('guilds', { schema: 'public' })
 @Check(/* sql */ `"prefix"::text <> ''::text`)
 export class GuildEntity extends BaseEntity {
 	@PrimaryColumn('varchar', { name: 'id', length: 19 })

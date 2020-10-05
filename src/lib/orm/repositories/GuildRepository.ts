@@ -8,9 +8,7 @@ export class GuildRepository extends Repository<GuildEntity> {
 		if (existing) return existing;
 
 		const data = new GuildEntity();
-
 		data.id = id;
-
 		return data;
 	}
 }
