@@ -10,12 +10,9 @@ export class DasbyArgument extends Argument<boolean> {
 	}
 
 	public async run(argument: string, context: ArgumentContext): AsyncArgumentResult<boolean> {
-		if (!argument) {
-			return this.error(argument, 'BooleanArgument', await context.message.fetchLanguageKey('arguments/core:boolean.notProvided'));
-		}
 		const boolean = String(argument).toLowerCase();
 		if (truths.includes(boolean)) return this.ok(true);
 		if (falses.includes(boolean)) return this.ok(false);
-		return this.error(argument, 'BooleanArgument', await context.message.fetchLanguageKey('arguments/core:boolean.invalid'));
+		return this.error(argument, 'BooleanArgumentInvalidBoolean', await context.message.fetchLanguageKey('arguments/core:boolean.invalid'));
 	}
 }
