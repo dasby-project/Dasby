@@ -38,7 +38,7 @@
 	"homepage": "https://github.com/dasby-project/Husky#readme",
 	"devDependencies": {
 		"@sapphire/eslint-config": "^1.0.2",
-		"@sapphire/ts-config": "^1.0.1",
+		"@sapphire/ts-config": "^1.0.2",
 		"@types/dotenv": "^8.2.0",
 		"@types/ioredis": "^4.17.4",
 		"@types/node": "^14.11.5",
