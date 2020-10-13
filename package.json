@@ -60,7 +60,7 @@
 		"@influxdata/influxdb-client-apis": "^1.7.0",
 		"@klasa/stopwatch": "^0.0.1",
 		"@klasa/type": "^0.0.1",
-		"@sapphire/decorators": "^1.0.1",
+		"@sapphire/decorators": "^1.0.2",
 		"@sapphire/framework": "sapphire-project/framework#build",
 		"@sapphire/pieces": "sapphire-project/pieces#build",
 		"@sapphire/utilities": "^1.0.1",
