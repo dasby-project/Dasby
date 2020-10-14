@@ -1,4 +1,5 @@
-import { Args, Command, CommandOptions } from '@sapphire/framework';
+import type { CommandOptions, Args } from '@sapphire/framework';
+import { DasbyCommand } from '@lib/structures/Command';
 import type { Message } from 'discord.js';
 import { ApplyOptions } from '@sapphire/decorators';
 
@@ -6,7 +7,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 	description: 'commands/general:say.description',
 	detailedDescription: 'commands/general:say.extended'
 })
-export class DasbyCommand extends Command {
+export default class extends DasbyCommand {
 	public async run(message: Message, args: Args) {
 		const sayMessage = await args.rest('string').catch(() => null);
 		if (message.deletable) await message.delete().catch(() => null);

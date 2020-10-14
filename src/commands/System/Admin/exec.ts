@@ -1,4 +1,5 @@
-import { Command, CommandOptions, Args } from '@sapphire/framework';
+import type { CommandOptions, Args } from '@sapphire/framework';
+import { DasbyCommand } from '@lib/structures/Command';
 import type { Message } from 'discord.js';
 import { ApplyOptions } from '@sapphire/decorators';
 import { codeBlock } from '@sapphire/utilities';
@@ -6,11 +7,11 @@ import { exec } from '@klasa/utils';
 import { PreConditions } from '@utils/enums';
 
 @ApplyOptions<CommandOptions>({
-	description: 'commands/tools:exec.description',
-	detailedDescription: 'commands/tools:exec.extended',
+	description: 'commands/system:exec.description',
+	detailedDescription: 'commands/system:exec.extended',
 	preconditions: [PreConditions.OwnerOnly]
 })
-export class DasbyCommand extends Command {
+export default class extends DasbyCommand {
 	public async run(message: Message, args: Args) {
 		const input = await args.rest('string').catch(() => null);
 		if (!input) return;

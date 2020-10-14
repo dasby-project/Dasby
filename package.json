@@ -17,7 +17,8 @@
 		"lint": "eslint --ext ts src --fix",
 		"build": "tsc -b src",
 		"build:clean": "tsc -b src --clean",
-		"watch": "tsc -b src -w"
+		"watch": "tsc -b src -w",
+		"typeorm": "node -r module-alias/register ./node_modules/typeorm/cli.js"
 	},
 	"repository": {
 		"type": "git",
@@ -70,6 +71,7 @@
 		"i18next": "^19.7.0",
 		"ioredis": "^4.17.3",
 		"lavacord": "^1.1.9",
+		"lodash": "^4.17.20",
 		"module-alias": "^2.2.2",
 		"pg": "^8.3.3",
 		"reflect-metadata": "^0.1.13",

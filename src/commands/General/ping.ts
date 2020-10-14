@@ -1,4 +1,5 @@
-import { Command, CommandOptions } from '@sapphire/framework';
+import type { CommandOptions } from '@sapphire/framework';
+import { DasbyCommand } from '@lib/structures/Command';
 import { Message, MessageEmbed } from 'discord.js';
 import { ApplyOptions } from '@sapphire/decorators';
 
@@ -6,7 +7,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 	description: 'commands/general:ping.description',
 	detailedDescription: 'commands/general:ping.extended'
 })
-export class DasbyCommand extends Command {
+export default class extends DasbyCommand {
 	public async run(message: Message) {
 		const msg = await message.channel.send(new MessageEmbed().setDescription(await message.fetchLanguageKey('commands/general:ping.message')));
 
