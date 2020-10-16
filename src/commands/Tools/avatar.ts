@@ -1,7 +1,8 @@
 import type { CommandOptions, Args } from '@sapphire/framework';
 import { DasbyCommand } from '@lib/structures/Command';
-import { Message, MessageEmbed } from 'discord.js';
+import type { Message } from 'discord.js';
 import { ApplyOptions } from '@sapphire/decorators';
+import { DasbyEmbed } from '@lib/structures/Embed';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['av'],
@@ -11,7 +12,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 export default class extends DasbyCommand {
 	public async run(message: Message, args: Args) {
 		const user = await args.pick('user').catch(() => message.author);
-		const embed = new MessageEmbed()
+		const embed = new DasbyEmbed()
 			.setTitle(await message.fetchLanguageKey('commands/tools:avatar.title', { userTag: `${user.tag}` }))
 			.setColor('RANDOM')
 			.setImage(user.displayAvatarURL({ format: 'png', size: 2048, dynamic: true }))

@@ -33,7 +33,6 @@ export default class extends DasbyCommand {
 		]);
 	}
 
-	// @ts-expect-error:6133
 	private async eval(message: Message, code: string, args: Args): Promise<EvalResults> {
 		const stopwatch = new Stopwatch();
 		let success: boolean | undefined = undefined;

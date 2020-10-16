@@ -9,7 +9,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 })
 export default class extends DasbyCommand {
 	public async run(message: Message, args: Args) {
-		const sayMessage = await args.rest('string').catch(() => null);
+		const sayMessage = await args.rest('string');
 		if (message.deletable) await message.delete().catch(() => null);
 		if (!sayMessage) {
 			return message.reply(await message.fetchLanguageKey('commands/general:say.messageEmpty')).then((msg) => msg.delete({ timeout: 6000 }));
