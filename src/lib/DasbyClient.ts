@@ -30,7 +30,7 @@ export class DasbyClient extends SapphireClient {
 		container.registerInstance(DasbyClient, this);
 	}
 
-	public async ensureGuild(id: string) {
+	public async ensureGuildSettings(id: string) {
 		const { guilds } = await DbSet.connect();
 		return guilds.ensure(id);
 	}
@@ -39,7 +39,7 @@ export class DasbyClient extends SapphireClient {
 		if (message.guild) {
 			const prefix = await this.cache.get(message.id, CacheKey.GuildPrefix);
 			if (prefix !== null) return prefix;
-			const settings = await this.ensureGuild(message.id);
+			const settings = await this.ensureGuildSettings(message.id);
 			await this.cache.set(message.id, settings.prefix, CacheKey.GuildPrefix);
 			await settings.save();
 			return settings.prefix;

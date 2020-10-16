@@ -24,7 +24,6 @@
 		"tooLong": "El argumento es demasiado largo."
 	},
 	"boolean": {
-		"notProvided": "Se debe propocionar un valor booleano.",
 		"invalid": "El valor introducido no es un booleano."
 	},
 	"user": {

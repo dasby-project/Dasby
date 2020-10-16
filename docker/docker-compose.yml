@@ -8,15 +8,12 @@ services:
       - '5432:5432'
     volumes:
       - postgres-data:/var/lib/postgresql/data
-  influx:
-    container_name: influxdb
-    image: quay.io/influxdb/influxdb:2.0.0-beta
+  lavalink:
+    container_name: lavalink
+    image: phamzito/lavalink:main
     restart: always
-    volumes:
-      - influx-data:/var/lib/influxdb2
     ports:
-      - '8285:9999'
-    command: influxd run --bolt-path /var/lib/influxdb2/influxd.bolt --engine-path /var/lib/influxdb2/engine --store bolt
+      - '2333:2333'
   redis:
     container_name: redis
     image: redis:alpine
@@ -26,6 +23,4 @@ services:
     command: redis-server
 volumes:
   postgres-data:
-    external: true
-  influx-data:
     external: true

@@ -1,8 +1,7 @@
 import { Intents, ClientOptions } from 'discord.js';
 
 export const DEV = Reflect.has(process.env, 'DEV') ? process.env.DEV === 'true' : !('PM2_HOME' in process.env);
-export const ENABLE_INFLUX = 'ENABLE_INFLUX' in process.env ? process.env.ENABLE_INFLUX === 'true' : !DEV;
-
+export const ENABLE_LAVALINK = Reflect.has(process.env, 'ENABLE_LAVALINK') ? process.env.ENABLE_LAVALINK === 'true' : !DEV;
 export const PREFIX = '-';
 export const OWNER_ID = '';
 

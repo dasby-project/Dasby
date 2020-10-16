@@ -1,8 +1,13 @@
 {
     "ping": {
-        "description": "Ejecuta una prueba de conexión a Discord.",
+        "description": "Ejecuta una prueba de conexión a Discord",
         "extended": "Ejecuta una prueba de respuesta de latencia y API",
         "message": "Ping? 🏓",
         "response": "**📨 Mensajes:** {{diff}}ms.\n**❤ API:** {{ping}}ms."
+    },
+    "say": {
+        "description": "Repite un mensaje",
+        "extended": "Repite un mensaje dado por el usuario",
+        "messageEmpty": "🙄 No puedes escribir un mensaje vacío."
     }
 }
