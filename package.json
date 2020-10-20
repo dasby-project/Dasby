@@ -44,7 +44,7 @@
 		"@sapphire/ts-config": "^1.0.1",
 		"@skyra/eslint-config": "^5.3.3",
 		"@types/dotenv": "^8.2.0",
-		"@types/ioredis": "^4.17.4",
+		"@types/ioredis": "^4.17.6",
 		"@types/node": "^14.11.5",
 		"@types/node-fetch": "^2.5.7",
 		"@types/pg": "^7.14.5",
