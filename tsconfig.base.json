@@ -1,5 +1,5 @@
 {
-	"extends": "@skyra/eslint-config",
+	"extends": "@dasby/eslint-config",
 	"compilerOptions": {
 		"target": "ESNext",
 		"useDefineForClassFields": true,
