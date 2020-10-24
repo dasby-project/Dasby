@@ -95,8 +95,7 @@
 		"esbenp.prettier-vscode",
 		"tabnine.tabnine-vscode",
 		"redhat.vscode-yaml",
-		"akamud.vscode-theme-onedark",
-		"oderwat.indent-rainbow"
+		"akamud.vscode-theme-onedark"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
