@@ -1,24 +1,9 @@
 {
-	"extends": ["@dasby", "plugin:prettier/recommended"],
+	"extends": ["@skyra", "plugin:prettier/recommended"],
 	"rules": {
 		"@typescript-eslint/no-throw-literal": 0,
 		"@typescript-eslint/restrict-plus-operands": 0,
 		"@typescript-eslint/naming-convention": 0,
 		"@typescript-eslint/indent": 0
-	},
-
-	"overrides": [
-		{
-			"files": ["src/commands/**/*.ts"],
-			"rules": {
-				"@typescript-eslint/require-await": 0
-			}
-		},
-		{
-			"files": ["src/lib/orm/entities/**/*.ts"],
-			"rules": {
-				"@typescript-eslint/no-inferrable-types": 0
-			}
-		}
-	]
+	}
 }

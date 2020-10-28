@@ -1,6 +1,6 @@
-
 # Created by https://www.toptal.com/developers/gitignore/api/typings,node,visualstudiocode,webstorm,webstorm+all,webstorm+iml
 # Edit at https://www.toptal.com/developers/gitignore?templates=typings,node,visualstudiocode,webstorm,webstorm+all,webstorm+iml
+
 
 ### Node ###
 # Logs
@@ -76,9 +76,11 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+.env*.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+.parcel-cache
 
 # Next.js build output
 .next
@@ -126,6 +128,7 @@ typings
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+.ionide
 
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -341,5 +344,4 @@ modules.xml
 
 
 # End of https://www.toptal.com/developers/gitignore/api/typings,node,visualstudiocode,webstorm,webstorm+all,webstorm+iml
-
 src/config.ts

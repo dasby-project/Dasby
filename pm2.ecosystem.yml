@@ -1,9 +1,4 @@
 apps:
-  script: './dist/index.js'
-  name: 'Dasby'
-  vizion: false
-  env:
-    ENABLE_LAVALINK: false
-  env_development:
-    DEV: true
-    ENABLE_LAVALINK: false
+    script: './dist/index.js'
+    name: 'Dasby'
+    vizion: false

@@ -10,6 +10,6 @@ export class GuildEntity extends BaseEntity {
 	@Column('varchar', { name: 'prefix', length: 3, default: PREFIX })
 	public prefix: string = PREFIX;
 
-	@Column('varchar', { name: 'language', length: 10, default: 'es-ES' })
+	@Column('varchar', { name: 'language', length: 6, default: 'es-ES' })
 	public language = 'es-ES';
 }

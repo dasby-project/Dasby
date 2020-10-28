@@ -1,15 +1,18 @@
 import { Intents, ClientOptions } from 'discord.js';
-
-export const DEV = Reflect.has(process.env, 'DEV') ? process.env.DEV === 'true' : !('PM2_HOME' in process.env);
-export const ENABLE_LAVALINK = Reflect.has(process.env, 'ENABLE_LAVALINK') ? process.env.ENABLE_LAVALINK === 'true' : !DEV;
+export const DEV = false;
+export const NAME = 'Dasby';
+export const VERSION = '1.0.0';
 export const PREFIX = '-';
-export const OWNER_ID = '';
+export const LAVALINK = false;
+export const OWNERS = [''];
 
-export const PGSQL_DATABASE_NAME = '';
-export const PGSQL_DATABASE_PASSWORD = '';
-export const PGSQL_DATABASE_USER = '';
-export const PGSQL_DATABASE_PORT = 5432;
-export const PGSQL_DATABASE_HOST = 'localhost';
+export const PGSQL = {
+	NAME: '',
+	USER: '',
+	PASSWORD: '',
+	PORT: 5432,
+	HOST: 'localhost'
+};
 
 export const CLIENT_OPTIONS: ClientOptions = {
 	i18n: {
@@ -21,17 +24,7 @@ export const CLIENT_OPTIONS: ClientOptions = {
 		}
 	},
 	ws: {
-		intents: [
-			Intents.FLAGS.GUILDS,
-			Intents.FLAGS.GUILD_MEMBERS,
-			Intents.FLAGS.GUILD_BANS,
-			Intents.FLAGS.GUILD_EMOJIS,
-			Intents.FLAGS.GUILD_VOICE_STATES,
-			Intents.FLAGS.GUILD_MESSAGES,
-			Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-			Intents.FLAGS.DIRECT_MESSAGES,
-			Intents.FLAGS.DIRECT_MESSAGE_REACTIONS
-		]
+		intents: Intents.ALL
 	}
 };
 
