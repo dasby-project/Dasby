@@ -9,6 +9,6 @@
 
 ## Reporting a Vulnerability
 
-if you find a vulnerability please write a message to Pham#3963
+if you find a vulnerability please write a message to Pham#9871
 
-- Use the GitHub issue tracker to report the issue
+-   Use the GitHub issue tracker to report the issue
