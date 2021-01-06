@@ -9,6 +9,7 @@ Dasby es un pequeño bot multiproposito</h4>
 
 </div>
 
+## ⚠️⚠️ Dasby esta actualmente offline y sin desarrollo por falta de mantenimiento. Disculpen las molestias
 ---
 
 ## Contributors ✨
