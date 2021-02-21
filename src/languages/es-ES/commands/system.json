@@ -1,8 +1,0 @@
-{
-	"eval": {
-		"description": "Obtiene una imagen de un shibe",
-		"extended": "Obtiene una adorable imagen aleatoria de un shibe",
-        "success": "Salida:\n{{output}}\nTipo:\n{{type}}\n{{time}}",
-        "error": "Error:\n{{output}}\nTipo:\n{{type}}\n{{time}}"
-	}
-}

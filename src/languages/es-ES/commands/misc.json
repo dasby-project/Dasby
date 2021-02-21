@@ -1,7 +1,0 @@
-{
-	"sadcat": {
-		"description": "Obtiene una foto de un gato llorando",
-		"extended": "Obtiene una imagen aleatoria de un lindo gato llorando",
-		"footer": "Pedido por {{authorTag}}"
-	}
-}

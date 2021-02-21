@@ -1,7 +1,0 @@
-{
-	"shibe": {
-		"description": "Obtiene una imagen de un shibe",
-		"extended": "Obtiene una adorable imagen aleatoria de un shibe",
-		"footer": "Pedido por {{authorTag}}"
-	}
-}
