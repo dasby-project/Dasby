@@ -1,4 +1,4 @@
 apps:
     script: './dist/index.js'
-    name: 'Dasby'
+    name: 'Elian'
     vizion: false

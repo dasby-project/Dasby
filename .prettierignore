@@ -2,7 +2,7 @@ dist
 .eslintignore
 .eslintrc.json
 .gitignore
-.prettierrc.json
+.prettierrc
 .releaserc.json
 tsconfig.eslint.json
 tsconfig.base.json
