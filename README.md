@@ -1,17 +1,21 @@
 <div align="center">
 
-# Dasby
+# Elian
 
-Dasby es un pequeño bot multiproposito</h4>
+**Un bot multiproposito de discord**
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/dasby-project/Dasby.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/dasby-project/Dasby/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/dasby-project/Dasby.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/dasby-project/Dasby/context:javascript)
+[![Support Server](https://discord.com/api/guilds/834855255044915200/embed.png?style=banner2)](https://dsc.gg/phamzito)
 
 </div>
 
-## ⚠️⚠️ Dasby esta actualmente offline y sin desarrollo por falta de mantenimiento. Disculpen las molestias
 ---
 
+## Descripción
+
+Elian es un bot de discord para una comunidad pequeña, este proyecto fue creado para aprender de javascript y typescript entre otras herramientas
+
+## Características
+- En proceso...
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
